@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <!--? header -->
+    <nav class="navbar">
+        <h2 class="title">BookShopp</h2>
+        <ul class="menu">
+            <li class="active">Books</li>
+            <li>AudioBooks</li>
+            <li>Gifts</li>
+            <li>About</li>
+        </ul>
+        <ul class="menu-icons">
+            <li><i class="bi bi-person"></i></li>
+            <li><i class="bi bi-search"></i></li>
+            <li class="basket-icon" onclick="toggleModel()">
+            <i class="bi bi-bag"></i>
+            <span class="basket-count"></span>
+            </li>
+        </ul>
+    </nav>
+    <!--? slider -->
+    <section class="slider">
+    <div id="carouselBookSlider" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./images/slide1.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/slide2.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/slide3.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselBookSlider" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselBookSlider" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <!--? products -->
+    <section class="store mt-5">
+        <div class="filter-background"></div>
+        <ul class="filter">
+            <li class="active">Tümü</li>
+            <li>Tarih</li>
+            <li>Roman</li>
+            <li>Finans</li>
+            <li>Kişisel Gelişim</li>
+            <li>Bilim</li>
+        </ul>
+        <div class="row book-list">
+            <div class="col-5 offset-2 my-5">
+                <div class="row book-card">
+                    <div class="col-6">
+                        <img src="/images/books/alayci-kus.jpg" alt="" class="img-fluid shadow">
+                    </div>
+                    <div class="col-6 d-flex flex-column justify-content-center gap-4">
+                        <div class="book-detail">
+                            <span class="fos gray fs-5">Suzanne Collins</span> <br>
+                            <span class="fs-5 fw-bold">Alaycı Kuş</span><br>
+                            <span class="book-star-rate">
+                                <i class="bi bi-star-fill active"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <span class="gray">1938 reviews</span>
+                            </span>
+                        </div>
+                        <p class="book-description fos gray">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero officia dolores itaque officiis excepturi distinctio quisquam doloremque maiores, eligendi repellendus?</p>
+                        <div>
+                            <span class="black fw-bold fs-4 me-2">45tl</span>
+                            <span class="fs-4 fw-bold old-price">65tl</span>
+                        </div>
+                        <button class="btn-purple">Sepete Ekle</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-5  my-5">
+                <div class="row book-card">
+                    <div class="col-6">
+                        <img src="/images/books/alayci-kus.jpg" alt="" class="img-fluid shadow">
+                    </div>
+                    <div class="col-6 d-flex flex-column justify-content-center gap-4">
+                        <div class="book-detail">
+                            <span class="fos gray fs-5">Suzanne Collins</span> <br>
+                            <span class="fs-5 fw-bold">Alaycı Kuş</span><br>
+                            <span class="book-star-rate">
+                                <i class="bi bi-star-fill active"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <span class="gray">1938 reviews</span>
+                            </span>
+                        </div>
+                        <p class="book-description fos gray">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero officia dolores itaque officiis excepturi distinctio quisquam doloremque maiores, eligendi repellendus?</p>
+                        <div>
+                            <span class="black fw-bold fs-4 me-2">45tl</span>
+                            <span class="fs-4 fw-bold old-price">65tl</span>
+                        </div>
+                        <button class="btn-purple">Sepete Ekle</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-5 offset-2 my-5">
+                <div class="row book-card">
+                    <div class="col-6">
+                        <img src="/images/books/alayci-kus.jpg" alt="" class="img-fluid shadow">
+                    </div>
+                    <div class="col-6 d-flex flex-column justify-content-center gap-4">
+                        <div class="book-detail">
+                            <span class="fos gray fs-5">Suzanne Collins</span> <br>
+                            <span class="fs-5 fw-bold">Alaycı Kuş</span><br>
+                            <span class="book-star-rate">
+                                <i class="bi bi-star-fill active"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <span class="gray">1938 reviews</span>
+                            </span>
+                        </div>
+                        <p class="book-description fos gray">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero officia dolores itaque officiis excepturi distinctio quisquam doloremque maiores, eligendi repellendus?</p>
+                        <div>
+                            <span class="black fw-bold fs-4 me-2">45tl</span>
+                            <span class="fs-4 fw-bold old-price">65tl</span>
+                        </div>
+                        <button class="btn-purple">Sepete Ekle</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-5  my-5">
+                <div class="row book-card">
+                    <div class="col-6">
+                        <img src="/images/books/alayci-kus.jpg" alt="" class="img-fluid shadow">
+                    </div>
+                    <div class="col-6 d-flex flex-column justify-content-center gap-4">
+                        <div class="book-detail">
+                            <span class="fos gray fs-5">Suzanne Collins</span> <br>
+                            <span class="fs-5 fw-bold">Alaycı Kuş</span><br>
+                            <span class="book-star-rate">
+                                <i class="bi bi-star-fill active"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <span class="gray">1938 reviews</span>
+                            </span>
+                        </div>
+                        <p class="book-description fos gray">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero officia dolores itaque officiis excepturi distinctio quisquam doloremque maiores, eligendi repellendus?</p>
+                        <div>
+                            <span class="black fw-bold fs-4 me-2">45tl</span>
+                            <span class="fs-4 fw-bold old-price">65tl</span>
+                        </div>
+                        <button class="btn-purple">Sepete Ekle</button>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </section>
+    <!--? basket -->
+    <div class="basket-model">
+        <div class="basket-items">
+            <i class="bi bi-x" onclick="toggleModel()"></i>
+            <h2 class="basket-title">Sepeteki Ürünler</h2>
+            <ul class="basket-list">
+                <li class="basket-item"><p class="text-center w-100">Sepette Herhangi Bir Ürün Bulunmamaktadır...</p>
+                </li> 
+            </ul>
+            <div class="basket-total">
+                <span class="fw-bold fs-4 mb-3 total-price">Toplam: 0tl</span>
+                <button class="btn-purple btCheck">Onayla</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
